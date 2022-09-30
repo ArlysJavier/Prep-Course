@@ -260,8 +260,9 @@ function esVocal(letra){
    }
   else if (letra=='a'|| letra=='e'||letra=='i'||letra=='o'||letra=='u'){
   console.log ('es vocal')
-  } else 
+  } else {
   console.log('dato incorrecto')
+  }
   
 }
 
