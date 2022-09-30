@@ -26,13 +26,10 @@ const nuevoModulo = 21 % 5 === 1;
 // Asegúrate que usas "return" cuando la consola te lo pida.
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
-
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  var A = str;
-  A='colombia'
-return A;
+return str;
 }
 
 function suma(x, y) {
@@ -67,17 +64,23 @@ function sonIguales(x, y) {
   if (x==y) {
     return true;
   } 
+  else{
   return false;
+  }
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1==str2) {
+  var L1 = str1.length
+  var L2 = str2.length
+  if (L1 ==L2) {
     return true;
   } 
+  else{
   return false;
+  }
 }
 
 function menosQueNoventa(num) {
@@ -87,7 +90,9 @@ function menosQueNoventa(num) {
   if (num<90) {
     return true;
   } 
+  else{
   return false;
+  }
 }
 
 
@@ -98,7 +103,9 @@ function mayorQueCincuenta(num) {
   if (num>50) {
     return true;
   } 
-  return false;
+   else{ 
+   return false;
+   }
 }
 
 
@@ -115,8 +122,9 @@ function esPar(num) {
   // Tu código:
   if (num%2 == 0) {
     return true;
-  } 
+  } else{
   return false;
+  }
 }
 
 function esImpar(num) {
@@ -125,8 +133,9 @@ function esImpar(num) {
   // Tu código:
   if (num%2 > 0) {
     return true;
-  } 
+  } else{
   return false;
+  }
 }
 
 function elevarAlCuadrado(num) {
@@ -194,8 +203,6 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-nombre='Arlys'
-apellido='Asprilla'
 console.log (nombre,apellido);
 }
 
@@ -204,7 +211,6 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  nombre='martin';
   console.log ('Hola',nombre,'\xA1');
 }
 
