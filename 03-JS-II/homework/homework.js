@@ -1,4 +1,4 @@
-// No cambies los nombres de las funciones.
+ // No cambies los nombres de las funciones.
 
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
@@ -179,10 +179,10 @@ function esPrimo(numero) {
     var M = numero%x;
     console.log(numero,'%',x,'=',M)
       if (M === 0){
-          console.log(false)
+          return false;
       }
       else {
-          console.log(true)
+         console.log ('true');
       }
   }
 }
@@ -224,7 +224,14 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  
+  var M1=1;
+  var result;
+  do{
+   M1++;
+   numero=numero+5;
+    console.log(numero);
+  }
+  while (M1<=8);
 }
 
 
