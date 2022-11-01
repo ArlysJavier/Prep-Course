@@ -263,7 +263,6 @@ function esVocal(letra){
   } else {
   console.log('dato incorrecto')
   }
-  
 }
 
 
